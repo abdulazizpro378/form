@@ -1,0 +1,93 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body {
+  /* background: linear-gradient(#141e30, #243b55); */
+  background-image: url(https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background-color: rgba(43, 52, 91, 0.7);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  color: #fff;
+  margin: 0 0 30px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box span {
+    position: absolute;
+    color: red;
+    left: 0;
+    top: 65%;
+    font-size: 12px;
+}
+
+.login-box .user-box input.err {
+    border-bottom:1px solid red ;
+
+}
+.login-box .user-box input.valid {
+    border-bottom:1px solid #0f0 ;
+    
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+#btn{
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(5,119,104);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
