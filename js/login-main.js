@@ -52,7 +52,7 @@ function myPass() {
     if (pass === "1604") {
       errElement.classList.remove("err");
       errElement.classList.add("valid");
-      window.location.href = "./index.html";
+      window.location.href = "./login-form.html";
       message.innerHTML = " ";
     
     }
